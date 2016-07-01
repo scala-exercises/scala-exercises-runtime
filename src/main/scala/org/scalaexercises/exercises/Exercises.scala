@@ -3,7 +3,7 @@
  * Copyright (C) 2015-2016 47 Degrees, LLC. <http://www.47deg.com>
  */
 
-package org.scalaExercises.exercises
+package org.scalaexercises.exercises
 
 import scala.annotation.tailrec
 import scala.collection.immutable.List
@@ -19,7 +19,7 @@ import cats.data.Xor
 import org.clapper.classutil.ClassFinder
 
 object Exercises {
-  val LIBRARIES_PACKAGE = "scalaExercisesContent"
+  val LIBRARIES_PACKAGE = "scalaexercisesContent"
 
   private[this] def classMap(cl: ClassLoader) = {
     val files = cl.asInstanceOf[URLClassLoader].getURLs map (_.getFile)

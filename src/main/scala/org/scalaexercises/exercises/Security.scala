@@ -1,4 +1,4 @@
-package org.scalaExercises.exercises
+package org.scalaexercises.exercises
 
 import java.security._
 

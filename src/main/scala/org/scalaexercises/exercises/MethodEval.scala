@@ -3,7 +3,7 @@
  * Copyright (C) 2015-2016 47 Degrees, LLC. <http://www.47deg.com>
  */
 
-package org.scalaExercises.exercises
+package org.scalaexercises.exercises
 import cats.data.{ Ior, Xor }
 import java.nio.file.Path
 import scala.concurrent.duration._
