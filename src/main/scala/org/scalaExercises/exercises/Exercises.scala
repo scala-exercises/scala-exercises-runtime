@@ -3,7 +3,7 @@
  * Copyright (C) 2015-2016 47 Degrees, LLC. <http://www.47deg.com>
  */
 
-package com.fortysevendeg.exercises
+package org.scalaExercises.exercises
 
 import scala.annotation.tailrec
 import scala.collection.immutable.List

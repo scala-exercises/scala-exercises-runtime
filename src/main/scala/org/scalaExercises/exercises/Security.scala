@@ -1,4 +1,4 @@
-package com.fortysevendeg.exercises
+package org.scalaExercises.exercises
 
 import java.security._
 
