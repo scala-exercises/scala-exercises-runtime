@@ -101,7 +101,7 @@ class Evaluator(timeout: Duration = 20.seconds) {
         case e                         ⇒ EvalResult.EvalRuntimeError(errors, None)
       }
     }
-   
+
   }
 
 }
