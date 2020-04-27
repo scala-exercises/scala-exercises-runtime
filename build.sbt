@@ -1,8 +1,9 @@
 ThisBuild / organization := "org.scala-exercises"
 ThisBuild / githubOrganization := "47degrees"
 ThisBuild / scalaVersion := V.scala
+ThisBuild / crossScalaVersions := Seq(V.scala212, V.scala)
 
-addCommandAlias("ci-test", ";scalafmtCheckAll; scalafmtSbtCheck; test")
+addCommandAlias("ci-test", ";scalafmtCheckAll; scalafmtSbtCheck; +test")
 addCommandAlias("ci-docs", ";github; project-docs/mdoc; headerCreateAll")
 
 lazy val V = new {
@@ -11,6 +12,7 @@ lazy val V = new {
   val classutil: String = "1.5.1"
   val http4s: String    = "0.21.3"
   val scala: String     = "2.13.2"
+  val scala212: String  = "2.12.11"
   val scalatest: String = "3.1.1"
 }
 
