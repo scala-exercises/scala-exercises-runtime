@@ -3,6 +3,8 @@ ThisBuild / githubOrganization := "47degrees"
 ThisBuild / scalaVersion := V.scala
 ThisBuild / crossScalaVersions := Seq(V.scala212, V.scala)
 
+publish / skip := true
+
 addCommandAlias("ci-test", ";scalafmtCheckAll; scalafmtSbtCheck; +test")
 addCommandAlias("ci-docs", ";github; project-docs/mdoc; headerCreateAll")
 
@@ -15,13 +17,6 @@ lazy val V = new {
   val scala212: String  = "2.12.11"
   val scalatest: String = "3.1.1"
 }
-
-lazy val root = project
-  .in(file("."))
-  .settings(moduleName := "scala-exercises-runtime")
-  .settings(skip in publish := true)
-  .aggregate(runtime, `evaluator-client`)
-  .dependsOn(runtime, `evaluator-client`)
 
 lazy val runtime = project
   .dependsOn(`evaluator-client`)
