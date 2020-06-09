@@ -29,7 +29,7 @@ class LibraryDiscoverySpec extends AnyFunSpec with Matchers {
 
   describe("exercise discovery") {
     it("should be able to load libraries") {
-      val (errors, discovered) = Exercises.discoverLibraries()
+      val (_, discovered) = Exercises.discoverLibraries()
 
       discovered.toSet shouldEqual Set(
         LibraryA,
@@ -39,7 +39,7 @@ class LibraryDiscoverySpec extends AnyFunSpec with Matchers {
     }
 
     it("libraries that are not objects should trigger errors") {
-      val (errors, discovered) = Exercises.discoverLibraries()
+      val (errors, _) = Exercises.discoverLibraries()
 
       errors.size shouldEqual 1
     }
