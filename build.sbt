@@ -5,8 +5,9 @@ ThisBuild / crossScalaVersions := Seq(V.scala212, V.scala)
 
 publish / skip := true
 
-addCommandAlias("ci-test", ";scalafmtCheckAll; scalafmtSbtCheck; +test")
-addCommandAlias("ci-docs", ";github; project-docs/mdoc; headerCreateAll")
+addCommandAlias("ci-test", "scalafmtCheckAll; scalafmtSbtCheck; test")
+addCommandAlias("ci-docs", "github; mdoc; headerCreateAll")
+addCommandAlias("ci-publish", "github; ci-release")
 
 lazy val V = new {
   val cats: String      = "2.1.1"
