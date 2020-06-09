@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.6.1](https://github.com/scala-exercises/scala-exercises-runtime/tree/v0.6.1) (2020-06-09)
+
+[Full Changelog](https://github.com/scala-exercises/scala-exercises-runtime/compare/v0.6.0...v0.6.1)
+
+**Merged pull requests:**
+
+- Prepare repository for next `.github` release and SBT build improvements [\#4](https://github.com/scala-exercises/scala-exercises-runtime/pull/4) ([juanpedromoreno](https://github.com/juanpedromoreno))
+
 ## [v0.6.0](https://github.com/scala-exercises/scala-exercises-runtime/tree/v0.6.0) (2020-04-27)
 
 [Full Changelog](https://github.com/scala-exercises/scala-exercises-runtime/compare/bb689de25da859e30f66b4a9e6b5f500c60300f4...v0.6.0)
