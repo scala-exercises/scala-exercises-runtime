@@ -1,7 +1,6 @@
 ThisBuild / organization := "org.scala-exercises"
 ThisBuild / githubOrganization := "47degrees"
 ThisBuild / scalaVersion := V.scala
-ThisBuild / crossScalaVersions := Seq(V.scala212, V.scala)
 
 publish / skip := true
 
@@ -15,7 +14,6 @@ lazy val V = new {
   val classutil: String = "1.5.1"
   val http4s: String    = "0.21.4"
   val scala: String     = "2.13.2"
-  val scala212: String  = "2.12.11"
   val scalatest: String = "3.1.2"
 }
 
