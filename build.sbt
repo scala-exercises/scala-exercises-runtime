@@ -42,10 +42,7 @@ lazy val `evaluator-client` = project
     )
   )
 
-lazy val `project-docs` = (project in file(".docs"))
-  .aggregate(runtime, `evaluator-client`)
-  .settings(moduleName := "runtime-project-docs")
-  .settings(mdocIn := file(".docs"))
+lazy val documentation = project
   .settings(mdocOut := file("."))
-  .settings(skip in publish := true)
+  .settings(publish / skip := true)
   .enablePlugins(MdocPlugin)
