@@ -1,27 +1,21 @@
 ThisBuild / organization := "org.scala-exercises"
 ThisBuild / githubOrganization := "47degrees"
 ThisBuild / scalaVersion := V.scala
-ThisBuild / crossScalaVersions := Seq(V.scala212, V.scala)
 
-addCommandAlias("ci-test", ";scalafmtCheckAll; scalafmtSbtCheck; +test")
-addCommandAlias("ci-docs", ";github; project-docs/mdoc; headerCreateAll")
+publish / skip := true
+
+addCommandAlias("ci-test", "scalafmtCheckAll; scalafmtSbtCheck; test")
+addCommandAlias("ci-docs", "github; mdoc; headerCreateAll")
+addCommandAlias("ci-publish", "github; ci-release")
 
 lazy val V = new {
   val cats: String      = "2.1.1"
   val circe: String     = "0.13.0"
   val classutil: String = "1.5.1"
-  val http4s: String    = "0.21.3"
+  val http4s: String    = "0.21.4"
   val scala: String     = "2.13.2"
-  val scala212: String  = "2.12.11"
-  val scalatest: String = "3.1.1"
+  val scalatest: String = "3.1.2"
 }
-
-lazy val root = project
-  .in(file("."))
-  .settings(moduleName := "scala-exercises-runtime")
-  .settings(skip in publish := true)
-  .aggregate(runtime, `evaluator-client`)
-  .dependsOn(runtime, `evaluator-client`)
 
 lazy val runtime = project
   .dependsOn(`evaluator-client`)
@@ -46,10 +40,7 @@ lazy val `evaluator-client` = project
     )
   )
 
-lazy val `project-docs` = (project in file(".docs"))
-  .aggregate(runtime, `evaluator-client`)
-  .settings(moduleName := "runtime-project-docs")
-  .settings(mdocIn := file(".docs"))
+lazy val documentation = project
   .settings(mdocOut := file("."))
-  .settings(skip in publish := true)
+  .settings(publish / skip := true)
   .enablePlugins(MdocPlugin)

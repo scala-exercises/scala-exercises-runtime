@@ -31,5 +31,4 @@ object ExampleTarget extends AnyFlatSpec with Matchers {
   def throwsExceptionMethod(): Unit =
     throw new ExampleException
 
-  def takesEitherMethod(either: Either[_, _]): Boolean = true
 }
