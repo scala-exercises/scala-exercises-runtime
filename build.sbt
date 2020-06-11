@@ -23,7 +23,7 @@ lazy val runtime = project
   .settings(
     libraryDependencies ++= Seq(
       "org.clapper"   %% "classutil" % V.classutil,
-      "org.typelevel" %% "cats-core" % V.cats % Compile,
+      "org.typelevel" %% "cats-core" % V.cats      % Compile,
       "org.scalatest" %% "scalatest" % V.scalatest % Test
     )
   )
