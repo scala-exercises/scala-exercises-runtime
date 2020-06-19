@@ -14,7 +14,7 @@ lazy val V = new {
   val classutil: String = "1.5.1"
   val http4s: String    = "0.21.4"
   val scala: String     = "2.13.2"
-  val scalatest: String = "3.1.2"
+  val scalatest: String = "3.2.0"
 }
 
 lazy val runtime = project
