@@ -1,5 +1,17 @@
 # Changelog
 
+## [v0.6.3](https://github.com/scala-exercises/scala-exercises-runtime/tree/v0.6.3) (2020-06-29)
+
+[Full Changelog](https://github.com/scala-exercises/scala-exercises-runtime/compare/v0.6.2...v0.6.3)
+
+📈 **Dependency updates**
+
+- Update sbt-mdoc to 2.2.2 [\#6](https://github.com/scala-exercises/scala-exercises-runtime/pull/6) ([scala-steward](https://github.com/scala-steward))
+
+**Merged pull requests:**
+
+- Cross-build Scala [\#17](https://github.com/scala-exercises/scala-exercises-runtime/pull/17) ([juanpedromoreno](https://github.com/juanpedromoreno))
+
 ## [v0.6.2](https://github.com/scala-exercises/scala-exercises-runtime/tree/v0.6.2) (2020-06-29)
 
 [Full Changelog](https://github.com/scala-exercises/scala-exercises-runtime/compare/v0.6.1...v0.6.2)
@@ -12,7 +24,6 @@
 - Update sbt-mdoc to 2.2.3 [\#12](https://github.com/scala-exercises/scala-exercises-runtime/pull/12) ([scala-steward](https://github.com/scala-steward))
 - Update http4s-blaze-client, http4s-circe to 0.21.5 [\#11](https://github.com/scala-exercises/scala-exercises-runtime/pull/11) ([scala-steward](https://github.com/scala-steward))
 - Update scalatest to 3.2.0 [\#9](https://github.com/scala-exercises/scala-exercises-runtime/pull/9) ([scala-steward](https://github.com/scala-steward))
-- Update sbt-mdoc to 2.2.2 [\#6](https://github.com/scala-exercises/scala-exercises-runtime/pull/6) ([scala-steward](https://github.com/scala-steward))
 
 **Merged pull requests:**
 
