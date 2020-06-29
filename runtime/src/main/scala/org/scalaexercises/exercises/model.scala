@@ -19,7 +19,8 @@ package model
 
 // This is the exercise runtime metamodel
 
-/** An exercise library.
+/**
+ * An exercise library.
  */
 trait Library {
   def owner: String
@@ -34,14 +35,16 @@ trait Library {
   def buildMetaInfo: BuildInfo
 }
 
-/** Library Build Metadata Information
+/**
+ * Library Build Metadata Information
  */
 trait BuildInfo {
   def resolvers: List[String]
   def libraryDependencies: List[String]
 }
 
-/** A section in a library.
+/**
+ * A section in a library.
  */
 trait Section {
   def name: String
@@ -52,7 +55,8 @@ trait Section {
   def contributions: List[Contribution]
 }
 
-/** A contribution to a section.
+/**
+ * A contribution to a section.
  */
 trait Contribution {
   def sha: String
@@ -64,7 +68,8 @@ trait Contribution {
   def avatarUrl: String
 }
 
-/** Exercises within a section.
+/**
+ * Exercises within a section.
  */
 trait Exercise {
   def name: String
