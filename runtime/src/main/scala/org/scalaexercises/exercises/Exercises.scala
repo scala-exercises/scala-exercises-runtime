@@ -38,7 +38,8 @@ object Exercises {
       .getURLs
       .map(url => new File(url.getFile)) filter (_.exists)).toSeq
     val classFinder = ClassFinder(files, Some(Opcodes.ASM7))
-    val classes = classFinder.getClasses
+    val classes = classFinder
+      .getClasses()
       .filter(Try(_).isSuccess)
       .toList
     ClassFinder.classInfoMap(classes.iterator)
