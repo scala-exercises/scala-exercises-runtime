@@ -1,5 +1,20 @@
 # Changelog
 
+## [v0.6.4](https://github.com/scala-exercises/scala-exercises-runtime/tree/v0.6.4) (2020-08-10)
+
+[Full Changelog](https://github.com/scala-exercises/scala-exercises-runtime/compare/v0.6.3.1...v0.6.4)
+
+📈 **Dependency updates**
+
+- Update sbt-mdoc to 2.2.4 [\#28](https://github.com/scala-exercises/scala-exercises-runtime/pull/28) ([47erbot](https://github.com/47erbot))
+- Update http4s-blaze-client, http4s-circe to 0.21.7 [\#27](https://github.com/scala-exercises/scala-exercises-runtime/pull/27) ([47erbot](https://github.com/47erbot))
+- Update sbt-buildinfo to 0.10.0 [\#26](https://github.com/scala-exercises/scala-exercises-runtime/pull/26) ([47erbot](https://github.com/47erbot))
+- Update scalatest to 3.2.1 [\#25](https://github.com/scala-exercises/scala-exercises-runtime/pull/25) ([47erbot](https://github.com/47erbot))
+- Update sbt-scalafmt to 2.4.2 [\#24](https://github.com/scala-exercises/scala-exercises-runtime/pull/24) ([47erbot](https://github.com/47erbot))
+- Update scalafmt-core to 2.6.4 [\#23](https://github.com/scala-exercises/scala-exercises-runtime/pull/23) ([47erbot](https://github.com/47erbot))
+- Update scalafmt-core to 2.6.3 [\#22](https://github.com/scala-exercises/scala-exercises-runtime/pull/22) ([scala-steward](https://github.com/scala-steward))
+- Update scalafmt-core to 2.6.2 [\#21](https://github.com/scala-exercises/scala-exercises-runtime/pull/21) ([scala-steward](https://github.com/scala-steward))
+
 ## [v0.6.3.1](https://github.com/scala-exercises/scala-exercises-runtime/tree/v0.6.3.1) (2020-06-29)
 
 [Full Changelog](https://github.com/scala-exercises/scala-exercises-runtime/compare/v0.6.3...v0.6.3.1)
