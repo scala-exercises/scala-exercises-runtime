@@ -13,7 +13,7 @@ lazy val V = new {
   val cats: String      = "2.4.1"
   val circe: String     = "0.13.0"
   val classutil: String = "1.5.1"
-  val http4s: String    = "0.21.18"
+  val http4s: String    = "0.21.19"
   val scalatest: String = "3.2.3"
 }
 
