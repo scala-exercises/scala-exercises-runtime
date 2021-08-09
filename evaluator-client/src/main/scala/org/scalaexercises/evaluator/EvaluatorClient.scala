@@ -18,7 +18,7 @@ package org.scalaexercises.evaluator
 
 import cats.effect.{ConcurrentEffect, Resource}
 import org.http4s.client.Client
-import org.http4s.client.blaze.BlazeClientBuilder
+import org.http4s.blaze.client.BlazeClientBuilder
 import org.scalaexercises.evaluator.service.{HttpClientHandler, HttpClientService}
 
 import scala.concurrent.ExecutionContext
