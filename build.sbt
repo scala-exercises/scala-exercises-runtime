@@ -1,6 +1,6 @@
-ThisBuild / organization := "org.scala-exercises"
+ThisBuild / organization       := "org.scala-exercises"
 ThisBuild / githubOrganization := "47degrees"
-ThisBuild / scalaVersion := "2.13.3"
+ThisBuild / scalaVersion       := "2.13.3"
 ThisBuild / crossScalaVersions := Seq("2.13.3", "2.12.11")
 
 publish / skip := true
