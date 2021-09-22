@@ -1,7 +1,7 @@
 ThisBuild / organization       := "org.scala-exercises"
 ThisBuild / githubOrganization := "47degrees"
-ThisBuild / scalaVersion       := "2.13.6"
-ThisBuild / crossScalaVersions := Seq("2.13.6", "2.12.11")
+ThisBuild / scalaVersion       := "2.13.3"
+ThisBuild / crossScalaVersions := Seq("2.13.3", "2.12.15")
 
 publish / skip := true
 
@@ -14,7 +14,7 @@ lazy val V = new {
   val circe: String     = "0.14.1"
   val classutil: String = "1.5.1"
   val http4s: String    = "0.21.28"
-  val scalatest: String = "3.2.9"
+  val scalatest: String = "3.2.10"
 }
 
 lazy val runtime = project
