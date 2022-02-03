@@ -16,7 +16,7 @@
 
 package org.scalaexercises.evaluator.util
 
-import cats.effect.Sync
+import cats.effect.Concurrent
 import io.circe.generic.semiauto
 import io.circe.generic.semiauto.deriveDecoder
 import io.circe.syntax.EncoderOps
@@ -52,8 +52,8 @@ object Codecs {
 
   implicit val encodeExclusion: Encoder[Exclusion] = semiauto.deriveEncoder[Exclusion]
 
-  implicit def decoder[F[_]: Sync, A: Decoder]: EntityDecoder[F, A] = jsonOf[F, A]
+  implicit def decoder[F[_]: Concurrent, A: Decoder]: EntityDecoder[F, A] = jsonOf[F, A]
 
-  implicit def encoder[F[_]: Sync, A: Encoder]: EntityEncoder[F, A] = jsonEncoderOf[F, A]
+  implicit def encoder[F[_], A: Encoder]: EntityEncoder[F, A] = jsonEncoderOf[F, A]
 
 }
