@@ -16,19 +16,17 @@
 
 package org.scalaexercises.evaluator
 
-import cats.effect.{ConcurrentEffect, Resource}
+import cats.effect.{Async, Resource}
 import org.http4s.client.Client
 import org.http4s.blaze.client.BlazeClientBuilder
 import org.scalaexercises.evaluator.service.{HttpClientHandler, HttpClientService}
 
-import scala.concurrent.ExecutionContext
-
 object EvaluatorClient {
 
-  private def clientResource[F[_]: ConcurrentEffect]: Resource[F, Client[F]] =
-    BlazeClientBuilder[F](ExecutionContext.global).resource
+  private def clientResource[F[_]: Async]: Resource[F, Client[F]] =
+    BlazeClientBuilder[F].resource
 
-  def apply[F[_]: ConcurrentEffect](url: String, authKey: String): HttpClientService[F] =
+  def apply[F[_]: Async](url: String, authKey: String): HttpClientService[F] =
     HttpClientHandler[F](url, authKey, clientResource[F])
 
 }

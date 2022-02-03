@@ -16,7 +16,7 @@
 
 package org.scalaexercises.evaluator.service
 
-import cats.effect.{Resource, Sync}
+import cats.effect.{Async, Resource, Sync}
 import cats.implicits._
 import org.http4s.client.Client
 import org.http4s.{Header, Method, Request, Uri}
@@ -30,7 +30,7 @@ object HttpClientHandler {
 
   private val headerContentType = Header.Raw(ci"content-type", "application/json")
 
-  def apply[F[_]](uri: String, authString: String, resource: Resource[F, Client[F]])(implicit
+  def apply[F[_]: Async](uri: String, authString: String, resource: Resource[F, Client[F]])(implicit
       F: Sync[F]
   ): HttpClientService[F] =
     new HttpClientService[F] {
