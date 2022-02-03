@@ -1,7 +1,7 @@
 ThisBuild / organization       := "org.scala-exercises"
 ThisBuild / githubOrganization := "47degrees"
-ThisBuild / scalaVersion       := "2.13.3"
-ThisBuild / crossScalaVersions := Seq("2.13.3", "2.12.15")
+ThisBuild / scalaVersion       := "2.13.8"
+ThisBuild / crossScalaVersions := Seq("2.13.8", "2.12.15")
 
 publish / skip := true
 
@@ -13,7 +13,11 @@ lazy val V = new {
   val cats: String      = "2.7.0"
   val circe: String     = "0.14.1"
   val classutil: String = "1.5.1"
+<<<<<<< HEAD
   val http4s: String    = "0.23.8"
+=======
+  val http4s: String    = "0.23.7"
+>>>>>>> update/http4s-blaze-client-0.23.7
   val scalatest: String = "3.2.10"
 }
 
