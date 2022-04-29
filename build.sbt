@@ -14,7 +14,7 @@ lazy val V = new {
   val circe: String     = "0.14.1"
   val classutil: String = "1.5.1"
   val http4s: String    = "0.23.11"
-  val scalatest: String = "3.2.11"
+  val scalatest: String = "3.2.12"
 }
 
 lazy val runtime = project
