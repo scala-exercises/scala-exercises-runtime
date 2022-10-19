@@ -1,7 +1,7 @@
 ThisBuild / organization       := "org.scala-exercises"
 ThisBuild / githubOrganization := "47degrees"
 ThisBuild / scalaVersion       := "2.13.8"
-ThisBuild / crossScalaVersions := Seq("2.13.8", "2.12.16")
+ThisBuild / crossScalaVersions := Seq("2.13.8", "2.12.17")
 
 publish / skip := true
 
@@ -11,10 +11,10 @@ addCommandAlias("ci-publish", "github; ci-release")
 
 lazy val V = new {
   val cats: String      = "2.8.0"
-  val circe: String     = "0.14.2"
+  val circe: String     = "0.14.3"
   val classutil: String = "1.5.1"
   val http4s: String    = "0.23.12"
-  val scalatest: String = "3.2.13"
+  val scalatest: String = "3.2.14"
 }
 
 lazy val runtime = project
